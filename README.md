@@ -11,15 +11,16 @@ Django REST Framework e-commerce backend with products, carts, orders, payments 
 - drf-spectacular (OpenAPI)
 
 ## Key Features
-- Users, profiles, addresses
-- Products, categories, images, reviews, search & filtering
-- Cart + order flow
-- Stripe payments + webhook
-- Caching, pagination, async email
-- Swagger/ReDoc docs
+- User accounts with profiles and multiple addresses
+- Product catalog with categories, images, reviews, search, and filters
+- Cart management with quantity updates and totals
+- Orders with billing/shipping info and status tracking
+- Stripe payments with webhook confirmation
+- Performance: caching, pagination, async email tasks
+- API docs via Swagger/ReDoc
 
 ## Quick Start
-1) Create .env (see sample keys below)
+1) Create .env 
 2) Install deps: pip install -r requirements.txt
 3) Migrate: python manage.py migrate
 4) Run: python manage.py runserver
@@ -33,11 +34,6 @@ SECRET_KEY_STRIPE=sk_test...
 STRIPE_WEBHOOK_SECRET=whsec...
 CELERY_BROKER_URL=redis://localhost:6379/1
 REDIS_BACKEND=redis://localhost:6379/2
-
-## Docs & Admin
-- Swagger: http://localhost:8000/api/schema/swagger-ui/
-- ReDoc: http://localhost:8000/api/schema/redoc/
-- Admin: http://localhost:8000/admin/
 
 ## Docker
 - Build: docker-compose build
