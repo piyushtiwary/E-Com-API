@@ -83,15 +83,6 @@ Thumbs.db
 logs/
 *.log
 
-# Node modules (if using npm packages)
-node_modules/
-
-# Temporary files
-*.tmp
-*.temp
-*.swp
-*.swo
-
 # Environment specific
 .env.production
 .env.staging
