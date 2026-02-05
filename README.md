@@ -1,6 +1,6 @@
 # E-Com API
 
-Django REST Framework e-commerce backend with products, carts, orders, payments (Stripe), and JWT auth.
+Django REST Framework based e-commerce backend with products, carts, orders, payments (Stripe), and JWT auth.
 
 ## Tech Stack
 - Django 6.0.1, DRF 3.16.1
